@@ -1,3 +1,40 @@
+
+@@font-face {
+  font-family: "Inter UI";
+  font-weight: 400;
+  src: url("../fonts/Inter-UI-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter UI";
+  font-weight: 700;
+  src: url("../fonts/Inter-UI-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DroidSerif";
+  font-weight: 400;
+  src: url("../fonts/DroidSerif-Regular-webfont.woff") format("woff");
+}
+  @font-face {
+    font-family: "DroidSerif";
+    font-weight: 400;
+    font-style: italic;
+    src: url("../fonts/DroidSerif-italic-webfont.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "DroidSerif";
+    font-weight: 700;
+    src: url("../fonts/DroidSerif-Bold-webfont.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "DroidSerif";
+    font-weight: 400;
+    font-style: italic;
+    src: url("../fonts/DroidSerif-Bolditalic-webfont.woff") format("woff");
+  }
 /*
     Elements: Page
     ---
@@ -7,8 +44,9 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
-    color: #111;
+    /* font-family: "Inter UI" ,"Helvetica Neue", Helvetica, arial, sans-serif;*/
+    font-family: "DroidSerif", Georgia Serif;
+    color: #5C6366;
     padding: 48px 24px 24px;
 }
 
@@ -25,7 +63,7 @@ body {
  */
 
 ::selection {
-    background: #e85e00;
+    background: #00E6A1;
     color: white;
     text-shadow: none;
 }
@@ -40,6 +78,12 @@ img {
     max-width: 100%;
     vertical-align: top;
 }
+h1,
+h2,
+h3{
+  color: #17181A;
+  font-family: "Inter UI" ,"Helvetica Neue", Helvetica, arial, sans-serif;
+}
 
 /*
     Elements: typography
@@ -48,9 +92,7 @@ img {
 */
 
 h1 {
-    font-family: "Times New Roman", serif;
     font-size: 36px;
-    font-weight: normal;
     line-height: 40px;
     margin: 0 0 24px;
 }
@@ -123,7 +165,7 @@ hr {
 }
 
 a {
-    color: RoyalBlue;
+    color: #00A1E6;
     transition: all .1s ease-in-out;
 }
 
@@ -134,7 +176,7 @@ a:active {
 
 a:hover,
 a:focus {
-    color: Crimson;
+    color: #1AFFBA;
 }
 
 /* Small devices (landscape phones, 576px and up) */
